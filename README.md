@@ -1,6 +1,6 @@
 # ODEV
 
-Office of Geothermal Strategy Management. Org development companion to [The Thermal Underground](https://thermalunderground.org).
+Office of Geothermal Organizational Development. Companion to [The Thermal Underground](https://thermalunderground.org).
 
 Live: [odev.thermalunderground.org](https://odev.thermalunderground.org)
 
