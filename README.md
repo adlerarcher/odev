@@ -22,7 +22,7 @@ Opens at `http://localhost:5176`.
 - `/programs/rd/` Research & Development
 - `/programs/pd/` Pilot & Demonstration
 - `/programs/csup/` Commercial Scale-Up structure
-- `/programs/support/` Program Support
+- `/programs/support/` Program Support (HR, Ops, Finance, Communications)
 - `/cycle/` Six-stage strategy cycle (infographic)
 - `/model/` Operating model (infographic)
 - `/groups/` Strategy Working Groups and Strategic Initiatives
