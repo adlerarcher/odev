@@ -22,7 +22,15 @@
       </a>
       <nav aria-label="Primary">
         <a href="/">Home</a>
-        <a href="/organization/">Organization</a>
+        <details class="nav-drop">
+          <summary>Programs</summary>
+          <div class="nav-menu">
+            <a href="/programs/rd/"><span class="prog-code">R&amp;D</span> Research &amp; Development</a>
+            <a href="/programs/pd/"><span class="prog-code">P&amp;D</span> Pilot &amp; Demonstration</a>
+            <a href="/programs/csup/"><span class="prog-code">CSUP</span> Commercial Scale-Up</a>
+            <a href="/programs/support/"><span class="prog-code">Support</span> Program Support</a>
+          </div>
+        </details>
         <a href="/cycle/" aria-current="page">Strategy Cycle</a>
         <a href="/model/">Operating Model</a>
         <a href="/groups/">Groups</a>
@@ -37,73 +45,81 @@
 </header>
 
 <main class="page wrap">
-  <section class="section" style="padding-top:48px">
+  <section class="section" style="padding-top:40px">
     <div class="section-intro">
       <p class="kicker">Six stages</p>
       <h2>How the office builds the plan</h2>
-      <p>Each stage tightens the record: collect, interview, discuss, assess, synthesize, then implement.</p>
+      <p>Collect, interview, discuss, assess, synthesize, then implement.</p>
     </div>
 
-    <div class="stage-grid">
-      <article class="stage" style="animation-delay:.04s">
+    <div class="cycle-board" aria-label="Six-stage strategy cycle infographic">
+      <div class="cycle-svg-wrap">
+        <svg viewBox="0 0 400 400" role="img" aria-labelledby="cycleTitle">
+          <title id="cycleTitle">Six-stage strategy cycle</title>
+          <circle cx="200" cy="200" r="118" fill="none" stroke="rgba(245,184,25,.28)" stroke-width="1.5" stroke-dasharray="4 6"/>
+          <circle cx="200" cy="200" r="78" fill="none" stroke="rgba(245,184,25,.14)" stroke-width="1"/>
+          <!-- arc connectors -->
+          <path d="M200 82 A118 118 0 0 1 302 141" fill="none" stroke="rgba(245,184,25,.55)" stroke-width="2"/>
+          <path d="M302 141 A118 118 0 0 1 302 259" fill="none" stroke="rgba(245,184,25,.55)" stroke-width="2"/>
+          <path d="M302 259 A118 118 0 0 1 200 318" fill="none" stroke="rgba(245,184,25,.55)" stroke-width="2"/>
+          <path d="M200 318 A118 118 0 0 1 98 259" fill="none" stroke="rgba(245,184,25,.55)" stroke-width="2"/>
+          <path d="M98 259 A118 118 0 0 1 98 141" fill="none" stroke="rgba(245,184,25,.55)" stroke-width="2"/>
+          <path d="M98 141 A118 118 0 0 1 200 82" fill="none" stroke="rgba(245,184,25,.55)" stroke-width="2"/>
+          <!-- nodes -->
+          <g font-family="Space Mono, monospace" font-size="11" fill="#061033" text-anchor="middle">
+            <circle cx="200" cy="82" r="22" fill="#F5B819"/><text x="200" y="86">01</text>
+            <circle cx="302" cy="141" r="22" fill="#F5B819"/><text x="302" y="145">02</text>
+            <circle cx="302" cy="259" r="22" fill="#F5B819"/><text x="302" y="263">03</text>
+            <circle cx="200" cy="318" r="22" fill="#F5B819"/><text x="200" y="322">04</text>
+            <circle cx="98" cy="259" r="22" fill="#F5B819"/><text x="98" y="263">05</text>
+            <circle cx="98" cy="141" r="22" fill="#F5B819"/><text x="98" y="145">06</text>
+          </g>
+          <g font-family="Fraunces, Georgia, serif" font-size="11" font-style="italic" fill="#f4f2ea" text-anchor="middle">
+            <text x="200" y="48">Notebook</text>
+            <text x="348" y="138">Interviews</text>
+            <text x="348" y="270">Sessions</text>
+            <text x="200" y="358">Operations</text>
+            <text x="52" y="270">Synthesis</text>
+            <text x="52" y="138">Systems</text>
+          </g>
+        </svg>
+        <div class="cycle-center">
+          <span class="label">2026</span>
+          <span class="title">Evidence →<br>Systems</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cycle-legend">
+      <article>
         <div class="stage-num">01</div>
         <h3>Planning Notebook</h3>
-        <p>Collect shared files, data, and inputs.</p>
-        <ul>
-          <li>Existing plans</li>
-          <li>Data &amp; dashboards</li>
-          <li>Opportunity notes</li>
-        </ul>
+        <p>Collect shared files, data, and inputs. Existing plans, dashboards, opportunity notes.</p>
       </article>
-      <article class="stage" style="animation-delay:.08s">
+      <article>
         <div class="stage-num">02</div>
         <h3>Program Manager Interviews</h3>
-        <p>Review past planning and improvements.</p>
-        <ul>
-          <li>Lessons learned</li>
-          <li>Process gaps</li>
-          <li>Cross-cutting needs</li>
-        </ul>
+        <p>Review past planning and improvements. Lessons learned, process gaps, cross-cutting needs.</p>
       </article>
-      <article class="stage" style="animation-delay:.12s">
+      <article>
         <div class="stage-num">03</div>
         <h3>Team Planning Sessions</h3>
-        <p>Discuss current efforts and feedback.</p>
-        <ul>
-          <li>Work underway</li>
-          <li>Initiative management</li>
-          <li>Partnership needs</li>
-        </ul>
+        <p>Discuss current efforts and feedback. Work underway, initiative management, partnership needs.</p>
       </article>
-      <article class="stage" style="animation-delay:.16s">
+      <article>
         <div class="stage-num">04</div>
         <h3>Operational Effectiveness</h3>
-        <p>Assess operations with the Director and MPAs.</p>
-        <ul>
-          <li>Process health</li>
-          <li>Decision flow</li>
-          <li>Support gaps</li>
-        </ul>
+        <p>Assess operations with the Director and MPAs. Process health, decision flow, support gaps.</p>
       </article>
-      <article class="stage" style="animation-delay:.2s">
+      <article>
         <div class="stage-num">05</div>
         <h3>Synthesis &amp; Retreat</h3>
-        <p>Convert insights into a draft plan.</p>
-        <ul>
-          <li>Strategy retreat</li>
-          <li>Draft plan</li>
-          <li>Feedback cycle</li>
-        </ul>
+        <p>Convert insights into a draft plan. Strategy retreat, draft plan, feedback cycle.</p>
       </article>
-      <article class="stage" style="animation-delay:.24s">
+      <article>
         <div class="stage-num">06</div>
         <h3>Systems Implementation</h3>
-        <p>Make strategy repeatable.</p>
-        <ul>
-          <li>Project management</li>
-          <li>Strategic initiatives</li>
-          <li>Partnerships</li>
-        </ul>
+        <p>Make strategy repeatable. Project management, strategic initiatives, partnerships.</p>
       </article>
     </div>
 

@@ -22,7 +22,15 @@
       </a>
       <nav aria-label="Primary">
         <a href="/">Home</a>
-        <a href="/organization/">Organization</a>
+        <details class="nav-drop">
+          <summary>Programs</summary>
+          <div class="nav-menu">
+            <a href="/programs/rd/"><span class="prog-code">R&amp;D</span> Research &amp; Development</a>
+            <a href="/programs/pd/"><span class="prog-code">P&amp;D</span> Pilot &amp; Demonstration</a>
+            <a href="/programs/csup/"><span class="prog-code">CSUP</span> Commercial Scale-Up</a>
+            <a href="/programs/support/"><span class="prog-code">Support</span> Program Support</a>
+          </div>
+        </details>
         <a href="/cycle/">Strategy Cycle</a>
         <a href="/model/" aria-current="page">Operating Model</a>
         <a href="/groups/">Groups</a>
@@ -31,23 +39,24 @@
     <div class="mast-copy">
       <p class="kicker">How work moves</p>
       <h1>Operating model</h1>
-      <p class="lede">Strategy coordination, initiative delivery, and execution tracking each have a home, without a shadow reporting structure.</p>
+      <p class="lede">Strategy coordination, initiative delivery, and execution tracking each have a home.</p>
     </div>
   </div>
 </header>
 
 <main class="page wrap">
-  <section class="section" style="padding-top:48px">
+  <section class="section" style="padding-top:40px">
     <div class="section-intro">
       <p class="kicker">Three homes</p>
-      <h2>Coordinate, deliver, track</h2>
-      <p>Each layer owns a different job so leadership can see the whole without inventing parallel chains of command.</p>
+      <h2>Coordinate · Deliver · Track</h2>
+      <p>Each layer owns a different job so leadership sees the whole portfolio.</p>
     </div>
 
-    <div class="card-grid three">
-      <article class="panel" style="animation-delay:.05s">
-        <p class="meta">Standing forums</p>
+    <div class="model-flow" aria-label="Operating model flow diagram">
+      <div class="model-node">
+        <div class="step">01 · Coordinate</div>
         <h3>Strategy Working Groups</h3>
+        <p class="role">Standing forums</p>
         <p>Aligned to strategic themes and goals.</p>
         <ul>
           <li>Coordinate across functions</li>
@@ -55,10 +64,12 @@
           <li>Surface dependencies</li>
           <li>Maintain cross-office visibility</li>
         </ul>
-      </article>
-      <article class="panel" style="animation-delay:.12s">
-        <p class="meta">Lead-owned work</p>
+      </div>
+      <div class="model-arrow" aria-hidden="true">→</div>
+      <div class="model-node">
+        <div class="step">02 · Deliver</div>
         <h3>Strategic Initiatives</h3>
+        <p class="role">Lead-owned work</p>
         <p>Bodies of work with defined scope and deliverables.</p>
         <ul>
           <li>Identify primary and supporting SWGs</li>
@@ -66,17 +77,59 @@
           <li>Resolve dependencies</li>
           <li>Hand off outputs</li>
         </ul>
-      </article>
-      <article class="panel" style="animation-delay:.19s">
-        <p class="meta">Shared tool</p>
+      </div>
+      <div class="model-arrow" aria-hidden="true">→</div>
+      <div class="model-node">
+        <div class="step">03 · Track</div>
         <h3>Tracking Register</h3>
+        <p class="role">Shared tool</p>
         <p>Management surface for leadership and initiative leads.</p>
         <ul>
           <li>Status, risks, dependencies</li>
           <li>Decisions and next milestones</li>
           <li>Sustainment home</li>
         </ul>
-      </article>
+      </div>
+    </div>
+
+    <div class="model-stack" aria-label="Operating model stacked for mobile">
+      <div class="model-node">
+        <div class="step">01 · Coordinate</div>
+        <h3>Strategy Working Groups</h3>
+        <p class="role">Standing forums</p>
+        <p>Aligned to strategic themes and goals.</p>
+        <ul>
+          <li>Coordinate across functions</li>
+          <li>Frame decisions</li>
+          <li>Surface dependencies</li>
+          <li>Maintain cross-office visibility</li>
+        </ul>
+      </div>
+      <div class="connector" aria-hidden="true">↓</div>
+      <div class="model-node">
+        <div class="step">02 · Deliver</div>
+        <h3>Strategic Initiatives</h3>
+        <p class="role">Lead-owned work</p>
+        <p>Bodies of work with defined scope and deliverables.</p>
+        <ul>
+          <li>Identify primary and supporting SWGs</li>
+          <li>Manage milestones</li>
+          <li>Resolve dependencies</li>
+          <li>Hand off outputs</li>
+        </ul>
+      </div>
+      <div class="connector" aria-hidden="true">↓</div>
+      <div class="model-node">
+        <div class="step">03 · Track</div>
+        <h3>Tracking Register</h3>
+        <p class="role">Shared tool</p>
+        <p>Management surface for leadership and initiative leads.</p>
+        <ul>
+          <li>Status, risks, dependencies</li>
+          <li>Decisions and next milestones</li>
+          <li>Sustainment home</li>
+        </ul>
+      </div>
     </div>
 
     <div class="takeaway">
@@ -85,8 +138,8 @@
     </div>
 
     <div class="cta-row" style="margin-top:36px">
-      <a class="btn btn-primary" href="/groups/">See SWGs &amp; initiatives</a>
-      <a class="btn btn-ghost" href="/cycle/">Back to the cycle</a>
+      <a class="btn btn-primary" href="/groups/">SWGs &amp; initiatives</a>
+      <a class="btn btn-ghost" href="/cycle/">Strategy cycle</a>
     </div>
   </section>
 

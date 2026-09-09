@@ -19,9 +19,12 @@ Opens at `http://localhost:5176`.
 ## Pages
 
 - `/` Home
-- `/organization/` Commercial Scale-Up structure
-- `/cycle/` Six-stage strategy management
-- `/model/` Operating model
+- `/programs/rd/` Research & Development
+- `/programs/pd/` Pilot & Demonstration
+- `/programs/csup/` Commercial Scale-Up structure
+- `/programs/support/` Program Support
+- `/cycle/` Six-stage strategy cycle (infographic)
+- `/model/` Operating model (infographic)
 - `/groups/` Strategy Working Groups and Strategic Initiatives
 
 ## Deploy
