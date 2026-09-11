@@ -29,12 +29,17 @@ jobs:
         run: |
           mkdir -p _site/images
           mkdir -p _site/organization _site/cycle _site/model _site/groups
+          mkdir -p _site/programs/rd _site/programs/pd _site/programs/csup _site/programs/support
           cp index.html CNAME styles.css thermal-underground-logo.png README.md _site/
           cp -R images/. _site/images/
           cp organization/index.html _site/organization/
           cp cycle/index.html _site/cycle/
           cp model/index.html _site/model/
           cp groups/index.html _site/groups/
+          cp programs/rd/index.html _site/programs/rd/
+          cp programs/pd/index.html _site/programs/pd/
+          cp programs/csup/index.html _site/programs/csup/
+          cp programs/support/index.html _site/programs/support/
           touch _site/.nojekyll
       - name: Setup Pages
         uses: actions/configure-pages@v5
